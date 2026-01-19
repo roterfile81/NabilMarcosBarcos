@@ -3,8 +3,8 @@ import java.util.ArrayList;
 
 public class puerto {
 
-	private String nombre;
-    private ArrayList<Barco> barcos;
+	protected String nombre;
+    protected ArrayList<Barco> barcos;
 
     public void Puerto(String nombre) {
         this.nombre = nombre;
