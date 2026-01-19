@@ -1,10 +1,44 @@
 package NabilMarcos;
+import java.util.ArrayList;
 
 public class puerto {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	private String nombre;
+    private ArrayList<Barco> barcos;
 
-	}
+    public void Puerto(String nombre) {
+        this.nombre = nombre;
+        barcos = new ArrayList<>();
+    }
 
+    public boolean entrarBarco(Barco b) {
+        if (barcos.size() < 4) {
+            barcos.add(b);
+            return true;
+        } else {
+            System.out.println("Puerto lleno");
+            return false;
+        }
+    }
+
+    public boolean salirBarco(String nombre) {
+        for (Barco b : barcos) {
+            if (b.getNombre().equalsIgnoreCase(nombre)) {
+                barcos.remove(b);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public double calcularPrecioViaje(Barco b, int horas, double precioCombustible) {
+        if (b.calcularAutonomia() < horas) {
+            return -1;
+        }
+        return horas * b.getMotor().getConsumo() * precioCombustible;
+    }
+
+    public ArrayList<Barco> getBarcos() {
+        return barcos;
+    }
 }
