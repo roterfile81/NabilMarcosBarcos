@@ -21,7 +21,7 @@ public class Catamaran extends Barco {
 	@Override
 	public String toString() {
 		return "Catamaran [motorSecundario=" + motorSecundario + ", getMotorSecundario()=" + getMotorSecundario()
-				+ ", calcularAutonomia()=" + calcularAutonomia() + ", toString()=" + super.toString() + "]";
+				+ ", calcularAutonomia()=" + calcularAutonomia() + ", toString()=" + "]";
 	}
 
 	@Override

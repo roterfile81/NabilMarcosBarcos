@@ -39,8 +39,7 @@ public class Motor {
 
 	@Override
 	public String toString() {
-		return "Motor [modelo=" + modelo + ", potencia=" + potencia + ", consumo=" + consumo + ", toString()="
-				+ super.toString() + "]";
+		return "Motor [modelo=" + modelo + ", potencia=" + potencia + ", consumo=" + consumo + ", toString()=" + "]";
 	}
 	
 	
