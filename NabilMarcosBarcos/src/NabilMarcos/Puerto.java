@@ -1,7 +1,7 @@
 package NabilMarcos;
 import java.util.ArrayList;
 
-public class puerto {
+public class Puerto {
 
 	protected String nombre;
     protected ArrayList<Barco> barcos;
