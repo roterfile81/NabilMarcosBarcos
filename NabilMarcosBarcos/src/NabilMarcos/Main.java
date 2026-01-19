@@ -23,12 +23,12 @@ public class Main {
         puerto.entrarBarco(cat1);
         puerto.entrarBarco(cat2);
 
-        // Mostrar barcos
+        
         for (Barco b : puerto.getBarcos()) {
             System.out.println(b);
         }
 
-        // Barco con mayor y menor autonomía
+    
         Barco mayor = puerto.getBarcos().get(0);
         Barco menor = mayor;
 
@@ -44,7 +44,7 @@ public class Main {
         System.out.println("Mayor autonomía: " + mayor.getNombre());
         System.out.println("Menor autonomía: " + menor.getNombre());
 
-        // Sacar un barco
+       
         puerto.salirBarco("Yate1");
         System.out.println("Barcos tras la salida:");
         for (Barco b : puerto.getBarcos()) {
