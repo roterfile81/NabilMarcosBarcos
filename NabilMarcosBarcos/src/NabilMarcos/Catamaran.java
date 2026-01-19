@@ -16,6 +16,7 @@ public class Catamaran extends Barco {
 	public void setMotorSecundario(Motor motorSecundario) {
 		this.motorSecundario = motorSecundario;
 	}
+	
 
 	@Override
 	public String toString() {
