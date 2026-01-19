@@ -6,7 +6,11 @@ public class Puerto {
 	protected String nombre;
     protected ArrayList<Barco> barcos;
 
-    public void Puerto(String nombre) {
+    public Puerto(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void Puerto(String nombre) {
         this.nombre = nombre;
         barcos = new ArrayList<>();
     }
