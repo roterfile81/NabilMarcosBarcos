@@ -27,5 +27,6 @@ public class Yate extends Barco {
 	public double calcularAutonomia() {
 		return capacidadCombustible / motor.getConsumo();
 	}
+	
 
 }
